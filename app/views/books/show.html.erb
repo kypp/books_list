@@ -1,6 +1,10 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <img id="cover_image" src="<%= @book.cover_image_uri %>" />
+</p>
+
+<p>
   <strong>Title:</strong>
   <%= @book.title %>
 </p>
@@ -8,11 +12,6 @@
 <p>
   <strong>Author:</strong>
   <%= @book.author %>
-</p>
-
-<p>
-  <strong>Cover image uri:</strong>
-  <%= @book.cover_image_uri %>
 </p>
 
 <p>
