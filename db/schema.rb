@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20141019154318) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "books", force: true do |t|
     t.string   "title"
     t.string   "author"
